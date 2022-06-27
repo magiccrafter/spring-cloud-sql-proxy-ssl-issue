@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    gcp:
+      sql:
+        enabled: false
+      core:
+        enabled: false
+      trace:
+        enabled: false
+  r2dbc:
+    url: r2dbc:postgresql://postgres@localhost:5432/postgres
+    username: postgres
+    password: postgres
+    pool:
+      enabled: true

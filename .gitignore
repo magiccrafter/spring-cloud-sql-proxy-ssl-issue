@@ -1,0 +1,32 @@
+HELP.md
+target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### VS Code ###
+.vscode/
+
+log.dir_IS_UNDEFINED
+log.file.path_IS_UNDEFINED
+.DS_Store
+*.retry
+logs
+builds
+.mvn
+.vagrant
+.ssh
+src/main/resources/hbase/
+ansible.cfg

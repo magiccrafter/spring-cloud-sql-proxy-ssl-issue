@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    gcp:
+      trace:
+        enabled: false
+      sql:
+        database-name: TODO
+        instance-connection-name: TODO
+
+logging.level.org.springframework.r2dbc: DEBUG

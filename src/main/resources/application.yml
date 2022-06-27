@@ -1,0 +1,33 @@
+server:
+  port: 8080
+  shutdown: graceful
+  compression:
+    enabled: true
+    mime-types: application/json
+    min-response-size: 2KB
+
+management:
+  server.port: 9080
+
+spring:
+  application:
+    name: spring-cloud-sql-proxy-ssl-issue
+  main:
+    banner-mode: off
+    allow-bean-definition-overriding: true
+  lifecycle:
+    timeout-per-shutdown-phase: PT10S
+  jackson:
+    deserialization:
+      FAIL_ON_UNKNOWN_PROPERTIES: false
+      READ_UNKNOWN_ENUM_VALUES_AS_NULL: true
+  data:
+    r2dbc:
+      repositories.enabled: false
+  r2dbc:
+    pool:
+      enabled: true
+      max-size: 10
+      initial-size: 10
+      max-life-time: PT1H
+      max-idle-time: PT1H
